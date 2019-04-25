@@ -3,6 +3,6 @@
 fully responsive & touchable menu/navbar
 
 
-parcel index.html
+parcel ./src/index.html
 
-parcel build index.html --public-url ./
+parcel build ./src/index.html --public-url ./
