@@ -2,7 +2,12 @@
 
 fully responsive & touchable menu/navbar
 
+### [try it!](https://fakiejohnny.github.io/tMenu/)
 
-parcel ./src/index.html
+* develop
 
-parcel build ./src/index.html --public-url ./
+`parcel ./src/index.html`
+
+* build for production
+
+`parcel build ./src/index.html --public-url ./`
