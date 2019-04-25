@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>tMenu</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="./menu.css">
+</head>
+
+<body>
+
+	<div id="hamburger">
+		<p><i class="material-icons menu-icon">menu</i> Menü</p>
+	</div>
+
+	<nav>
+		<div class="brand">
+			<a href="#">Brand</a>
+		</div>
+		<ul>
+			<li class="active"><a href="#">Home</a></li>
+			<li class="has-submenu"><a href="#">It's a Dropdown Menu <i class="material-icons">arrow_drop_down</i></a>
+				<ul>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contact</a></li>
+			<li class="has-submenu"><a href="#">It's a second Dropdown Menu <i class="material-icons">arrow_drop_down</i></a>
+				<ul>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=document.querySelector%2CElement.prototype.classList%2CrequestAnimationFrame%2CEvent"></script>
+
+	<script src="./index.js"></script>
+</body>
+
+</html>
