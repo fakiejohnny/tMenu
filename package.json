@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "hammerjs": "^2.0.8"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }
