@@ -148,7 +148,7 @@ export default class Menu {
         if (ev.center.y > 0) {
 
             if (this.menuOpen === false) {
-                if (ev.center.x < 50) {
+                if (ev.center.x < 25) {
                     this.startMove();
                 }
             } else {
@@ -214,7 +214,8 @@ export default class Menu {
         this.menuOpen = true;
 
         this.hammerBody.get('pan').set({
-            threshold: 10
+            threshold: 10,
+            direction: Hammer.DIRECTION_HORIZONTAL
         });
 
         nav.style[this.transformProp] = "translate3d(" + Math.round(this.overhang) + "px, 0px, 0px)";
@@ -228,7 +229,8 @@ export default class Menu {
         this.menuOpen = false;
 
         this.hammerBody.get('pan').set({
-            threshold: 0
+            threshold: 0,
+            direction: Hammer.DIRECTION_ALL
         });
 
         body.style.overflow = "auto";
